@@ -1,0 +1,180 @@
+/**
+ *
+ * Bootstrap Variable Overrrides
+ *
+ */
+
+// Colors
+
+$blue: #0892d0;
+$blue-dark: #00293b;
+
+$primary: $blue;
+$secondary: $blue-dark;
+
+$body-color: $blue-dark;
+// $navbar-dark-color: #fff;
+// $input-color: $primary;
+// $link-color: $secondary;
+
+// $link-decoration: underline;
+// $link-hover-color: $secondary;
+
+$enable-rounded: false;
+$enable-grid-classes: true;
+$enable-responsive-font-sizes: true;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1680px,
+);
+
+// Grid Breakpoints
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1440px,
+);
+
+$grid-gutter-width: 40px;
+
+// Rounded
+$border-radius: 0.25rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+
+// Shadow
+// $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+// $box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+// $box-shadow-lg: 0 1rem 3rem rgba($black, 0.175);
+
+$font-family-sans-serif: 'DM Sans', sans-serif;
+$headings-font-family: 'effra', sans-serif;
+
+// Spacing
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: (
+      $spacer * 0.75,
+    ),
+    4: $spacer,
+    5: (
+      $spacer * 1.5,
+    ),
+    6: (
+      $spacer * 2,
+    ),
+    7: (
+      $spacer * 3,
+    ),
+    8: (
+      $spacer * 4,
+    ),
+    9: (
+      $spacer * 6,
+    ),
+    10: (
+      $spacer * 8,
+    ),
+    11: (
+      $spacer * 12,
+    ),
+    12: (
+      $spacer * 16,
+    ),
+    13: (
+      $spacer * 24,
+    ),
+    14: (
+      $spacer * 32,
+    ),
+    15: (
+      $spacer * 40,
+    ),
+    16: (
+      $spacer * 48,
+    ),
+  ),
+  $spacers
+);
+
+$spacer-1: map-get($spacers, 1);
+$spacer-2: map-get($spacers, 2);
+$spacer-3: map-get($spacers, 3);
+$spacer-4: map-get($spacers, 4);
+$spacer-5: map-get($spacers, 5);
+$spacer-6: map-get($spacers, 6);
+$spacer-7: map-get($spacers, 7);
+$spacer-8: map-get($spacers, 8);
+$spacer-9: map-get($spacers, 9);
+$spacer-10: map-get($spacers, 10);
+$spacer-11: map-get($spacers, 11);
+$spacer-12: map-get($spacers, 12);
+$spacer-13: map-get($spacers, 13);
+$spacer-14: map-get($spacers, 14);
+$spacer-15: map-get($spacers, 15);
+$spacer-16: map-get($spacers, 16);
+
+// Font sizes
+
+$text-xs: 0.8rem; // 12px
+$text-sm: 0.95rem; // 14px
+$text-base: 1rem; // 16px
+$text-md: 1.25rem; // 18px
+$text-lg: 1.5rem; // 20px
+$text-xl: 1.75rem; // 24px
+$text-2xl: 2rem; // 30px
+$text-3xl: 3rem; // 36px
+$text-4xl: 3.5rem; // 48px
+$text-5xl: 3.75rem; // 60px
+$text-6xl: 4.5rem; // 72px
+
+$font-size-base: 1.1rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: 1rem;
+$line-height-base: 1.4;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: 3rem;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+
+$display1-size: $text-6xl;
+$display2-size: $text-5xl;
+$display3-size: $text-4xl;
+$display4-size: $text-3xl;
+
+// Buttons
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1.5rem;
+
+$btn-padding-x: 2rem;
+$btn-padding-y: 0.6rem;
+$btn-padding-x-lg: $spacer-7;
+$btn-font-size: $text-sm;
+$btn-font-weight: 600;
+
+// Navbar
+
+$navbar-dark-color: #fff;
+$navbar-nav-link-padding-x: $spacer-4;
