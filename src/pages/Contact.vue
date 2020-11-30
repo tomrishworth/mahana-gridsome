@@ -2,9 +2,9 @@
   <Layout>
     <hero-title class="mb-8" pageTitle="Contact Us" cloudinaryImageId="piha_lomlcn"></hero-title>
 
-    <div class="container-md mb-10">
+    <div class="container-lg mb-10">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-6">
           <h2 class="text-2xl mt-sm-8 mb-6">Media &amp; Investor Enquires</h2>
           <ul class="list-unstyled">
             <li class="mb-6">
@@ -19,7 +19,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-6">
           <g-image class="products-image" src="~/assets/images/glasshouse.png" alt="" />
         </div>
       </div>
