@@ -2,8 +2,8 @@
   <Layout>
     <section class="hero container-fluid">
       <div class="hero-content pb-8 text-center">
-        <h1 class="text-3xl" data-aos="fade-up">A Cure for Migraine is Coming</h1>
-        <h2 class="faded text-lg mb-6" data-aos="fade-up" data-aos-delay="200">
+        <h1 class="text-3xl" data-aos="fade-up" data-aos-offset="0">A Cure for Migraine is Coming</h1>
+        <h2 class="faded text-lg mb-6" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
           Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars
         </h2>
         <div data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
@@ -47,7 +47,7 @@
             headache product development and research for prescripbers and patient in New Zealand and around the world
           </p>
         </div>
-        <div class="col-sm-7" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-sm-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <g-image src="~/assets/images/women-in-sun.jpg" alt="Smiling women in the sun" width="600" />
         </div>
       </div>
@@ -64,7 +64,7 @@
             <g-link class="btn btn-outline-primary" to="/our-products">Find out more</g-link>
           </p>
         </div>
-        <div class="col-sm-6 order-sm-first" data-aos="fade-up" data-aos-delay="600">
+        <div class="col-sm-6 order-sm-first" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
           <g-image class="products-image" src="~/assets/images/our-products.png" alt="" width="500" />
         </div>
       </div>
@@ -127,7 +127,7 @@ export default {
 .hero {
   background-image: url(../assets/images/homepage-hero-desktop.jpg);
   background-size: cover;
-  height: calc(100vh + 200px);
+  height: calc(100vh + 100px);
   // min-height: 00px;
   display: flex;
   justify-content: flex-start;
