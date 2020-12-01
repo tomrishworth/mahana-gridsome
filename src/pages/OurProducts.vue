@@ -65,7 +65,7 @@
       </p>
       <div class="row">
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up">
-          <div class="callout img-zoom">
+          <div class="callout">
             <g-image
               height="250"
               width="370"
@@ -73,24 +73,24 @@
               src="~/assets/images/chemical-engineering.jpg"
             ></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Chemical Engineering</h3>
-            <h4 class="text-md text-muted font-weight-normal">Extraction + Isolation</h4>
-            <b-button @click="showModal('Chemical Engineering')">Enquire</b-button>
+            <h4 class="text-md mb-4 text-muted font-weight-normal">Extraction + Isolation</h4>
+            <b-button variant="outline-secondary" @click="showModal('Chemical Engineering')">Enquire</b-button>
           </div>
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="200">
-          <div class="callout img-zoom">
+          <div class="callout">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/plant-biology.jpg"></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Plant Biology</h3>
-            <h4 class="text-md text-muted font-weight-normal">Crop Diversity + Resilience</h4>
-            <b-button @click="showModal('Plant Biology')">Enquire</b-button>
+            <h4 class="text-md mb-4 text-muted font-weight-normal">Crop Diversity + Resilience</h4>
+            <b-button variant="outline-secondary" @click="showModal('Plant Biology')">Enquire</b-button>
           </div>
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="400">
-          <div class="callout img-zoom" to="/">
+          <div class="callout">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/neuropathic-pain.jpg"></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Neuropathic Pain</h3>
-            <h4 class="text-md text-muted font-weight-normal">Cannabinoids + Patient Efficacy</h4>
-            <b-button @click="showModal('Neuropathic Pain')">Enquire</b-button>
+            <h4 class="text-md mb-4 text-muted font-weight-normal">Cannabinoids + Patient Efficacy</h4>
+            <b-button variant="outline-secondary" @click="showModal('Neuropathic Pain')">Enquire</b-button>
           </div>
         </div>
       </div>
