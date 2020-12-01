@@ -14,9 +14,9 @@
         <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
           <b-navbar-nav class="pt-4 pr-4 ml-auto">
-            <b-nav-item router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
+            <b-nav-item class="tm" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
-            <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraines</b-nav-item>
+            <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraine</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
@@ -30,47 +30,80 @@
         <slot />
       </main>
     </transition>
-    <!-- <b-modal id="invest-modal" title="Invest with Us">
-      <p class="my-4">Here is some text about the invest process</p>
-      <p>Mailchimp signup form will go here</p>
-    </b-modal> -->
+
     <footer>
       <div class="bg-primary">
         <div class="container py-6">
-          <mailchimp-subscribe
-            url="https://xxx.xxx.list-manage.com/subscribe/post-json"
-            user-id="xxx"
-            list-id="xxx"
-            @error="onError"
-            @success="onSuccess"
-          >
-            <template v-slot="{ subscribe, setEmail, error, success, loading }">
-              <form class="sign-up-form form-dark" @submit.prevent="subscribe">
-                <div class="d-sm-flex justify-content-center align-items-center">
-                  <h3 class="text-md text-white flex-shrink-0 mr-4 pull-down-3">Register your interest</h3>
-                  <input
-                    class="sign-up-field form-control mr-4"
-                    placeholder="Your name"
-                    type="text"
-                    @input="setName($event.target.value)"
-                  />
-                  <input
-                    class="sign-up-field form-control mr-4"
-                    placeholder="Email Address"
-                    type="email"
-                    @input="setEmail($event.target.value)"
-                  />
-                  <div class="sign-up-button">
-                    <button class="btn btn-secondary" type="submit">Register</button>
-                  </div>
-                </div>
+          <!-- Begin Mailchimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form
+              action="https://mahanabiopharma.us7.list-manage.com/subscribe/post?u=0ad08557738929089c8fbd124&amp;id=53d7f46597"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate form-dark"
+              target="_blank"
+              novalidate
+            >
+              <h3 class="text-md text-white d-lg-none mb-4">Register your interest</h3>
+              <div id="mc_embed_signup_scroll" class="d-sm-flex justify-content-center align-items-center">
+                <h3 class="text-md text-white flex-shrink-0 mr-4 pull-down-3 d-none d-lg-block">
+                  Register your interest
+                </h3>
 
-                <div v-if="error">{{ error }}</div>
-                <div v-if="success">Yay!</div>
-                <div v-if="loading">Loading…</div>
-              </form>
-            </template>
-          </mailchimp-subscribe>
+                <div class="mc-field-group mx-sm-1 mb-4 mb-sm-0">
+                  <!-- <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label> -->
+                  <input
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                    name="EMAIL"
+                    class="form-control required email"
+                    id="mce-EMAIL"
+                  />
+                </div>
+                <div class="mc-field-group mx-sm-1 mb-4 mb-sm-0">
+                  <!-- <label for="mce-FNAME">First Name </label> -->
+                  <input
+                    placeholder="First name"
+                    type="text"
+                    value=""
+                    name="FNAME"
+                    class="form-control"
+                    id="mce-FNAME"
+                  />
+                </div>
+                <div class="mc-field-group mx-sm-1 mb-4 mb-sm-0">
+                  <!-- <label for="mce-LNAME">Last Name </label> -->
+                  <input
+                    placeholder="Last name"
+                    type="text"
+                    value=""
+                    name="LNAME"
+                    class="form-control"
+                    id="mce-LNAME"
+                  />
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_0ad08557738929089c8fbd124_53d7f46597" tabindex="-1" value="" />
+                </div>
+                <div class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="btn btn-secondary"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="bg-dark text-center py-4">
@@ -82,7 +115,7 @@
           />
         </div>
         <b-nav class="justify-content-center py-6">
-          <b-nav-item router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
+          <b-nav-item class="tm" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraines</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
@@ -106,13 +139,9 @@
 </template>
 
 <script>
-import MailchimpSubscribe from 'vue-mailchimp-subscribe';
 import AOS from 'aos';
 
 export default {
-  components: {
-    MailchimpSubscribe,
-  },
   mounted() {
     AOS.init({
       duration: 1000,

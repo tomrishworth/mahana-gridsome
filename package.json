@@ -13,10 +13,8 @@
     "bootstrap-vue": "^2.17.3",
     "cloudinary-vue": "^1.1.2",
     "gridsome": "^0.7.0",
-    "gridsome-source-graphql-prismic": "^0.1.6",
-    "locomotive-scroll": "^4.0.4",
+    "rellax": "^1.12.1",
     "slugify": "^1.4.5",
-    "vue-mailchimp-subscribe": "^1.1.0",
     "vue-simple-markdown": "^1.1.4"
   },
   "devDependencies": {

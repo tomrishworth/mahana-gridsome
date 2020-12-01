@@ -65,7 +65,7 @@
       </p>
       <div class="row">
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up">
-          <g-link class="callout img-zoom" to="/">
+          <div class="callout img-zoom">
             <g-image
               height="250"
               width="370"
@@ -74,24 +74,57 @@
             ></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Chemical Engineering</h3>
             <h4 class="text-md text-muted font-weight-normal">Extraction + Isolation</h4>
-          </g-link>
+            <b-button @click="showModal('Chemical Engineering')">Enquire</b-button>
+          </div>
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="200">
-          <g-link class="callout img-zoom" to="/">
+          <div class="callout img-zoom">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/plant-biology.jpg"></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Plant Biology</h3>
             <h4 class="text-md text-muted font-weight-normal">Crop Diversity + Resilience</h4>
-          </g-link>
+            <b-button @click="showModal('Plant Biology')">Enquire</b-button>
+          </div>
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="400">
-          <g-link class="callout img-zoom" to="/">
+          <div class="callout img-zoom" to="/">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/neuropathic-pain.jpg"></g-image>
             <h3 class="mt-4 mb-1 text-dark text-lg font-weight-semibold">Neuropathic Pain</h3>
             <h4 class="text-md text-muted font-weight-normal">Cannabinoids + Patient Efficacy</h4>
-          </g-link>
+            <b-button @click="showModal('Neuropathic Pain')">Enquire</b-button>
+          </div>
         </div>
       </div>
     </section>
+    <b-modal v-model="modalShow" title="Research Enquiry" hide-footer>
+      <form name="contact" method="POST" data-netlify="true">
+        <div class="form-group">
+          <label for="interestInput">I'm interested in</label>
+          <input
+            disabled
+            :value="selectedProgram"
+            type="text"
+            name="interest"
+            class="form-control"
+            id="interestInput"
+          />
+        </div>
+        <div class="form-group">
+          <label for="firstNameInput">First name</label>
+          <input type="text" name="firstName" class="form-control" id="firstNameInput" />
+        </div>
+        <div class="form-group">
+          <label for="lastNameInput">First name</label>
+          <input type="text" name="lastName" class="form-control" id="lastNameInput" />
+        </div>
+        <div class="form-group">
+          <label for="emailInput">Email Address</label>
+          <input type="email" name="email" class="form-control" id="emailInput" />
+        </div>
+        <div class="form-group text-center">
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+      </form>
+    </b-modal>
   </Layout>
 </template>
 
@@ -101,6 +134,19 @@ import HeroTitle from '~/components/HeroTitle';
 export default {
   metaInfo: {
     title: 'Our Products',
+  },
+  data() {
+    return {
+      modalShow: false,
+      selectedProgram: null,
+    };
+  },
+  methods: {
+    showModal(value) {
+      console.log(value);
+      this.selectedProgram = value;
+      this.modalShow = true;
+    },
   },
   components: {
     HeroTitle,

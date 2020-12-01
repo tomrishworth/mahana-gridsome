@@ -8,33 +8,50 @@
         </h2>
         <div data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
           <h3 class="text-lg mb-5 hr">Register your interest</h3>
-          <mailchimp-subscribe
-            url="https://xxx.xxx.list-manage.com/subscribe/post-json"
-            user-id="xxx"
-            list-id="xxx"
-            @error="onError"
-            @success="onSuccess"
-          >
-            <template v-slot="{ subscribe, setEmail, error, success, loading }">
-              <form class="form-dark" @submit.prevent="subscribe">
-                <div class="d-sm-flex justify-content-center align-items-center">
+          <div id="mc_embed_signup">
+            <form
+              action="https://mahanabiopharma.us7.list-manage.com/subscribe/post?u=0ad08557738929089c8fbd124&amp;id=53d7f46597"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate form-dark"
+              target="_blank"
+              novalidate
+            >
+              <div id="mc_embed_signup_scroll" class="d-sm-flex justify-content-center align-items-center">
+                <!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+                <div class="mc-field-group flex-grow-1 mr-sm-4 mb-4 mb-sm-0">
+                  <!-- <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label> -->
                   <input
-                    class="form-control form-control-lg mr-sm-4 mb-4 mb-sm-0"
-                    placeholder="Email Address"
+                    placeholder="Your Email Address"
                     type="email"
-                    @input="setEmail($event.target.value)"
+                    value=""
+                    name="EMAIL"
+                    class="form-control form-control-lg required email"
+                    id="mce-EMAIL"
                   />
-                  <div>
-                    <button class="btn btn-lg btn-primary" type="submit">Register</button>
-                  </div>
                 </div>
 
-                <div v-if="error">{{ error }}</div>
-                <div v-if="success">Yay!</div>
-                <div v-if="loading">Loading…</div>
-              </form>
-            </template>
-          </mailchimp-subscribe>
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none"></div>
+                  <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_0ad08557738929089c8fbd124_53d7f46597" tabindex="-1" value="" />
+                </div>
+                <div class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="btn btn-lg btn-primary"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
       <div class="hero-mask"></div>
@@ -93,7 +110,7 @@
               class="callout-image img-fluid"
               src="~/assets/images/daysaver.jpg"
             ></g-image>
-            <h3 class="callout-title">Daysaver</h3>
+            <h3 class="callout-title tm pr-5">Daysaver</h3>
             <div class="callout-mask"></div>
           </g-link>
         </div>
@@ -103,22 +120,9 @@
 </template>
 
 <script>
-import MailchimpSubscribe from 'vue-mailchimp-subscribe';
-
 export default {
   metaInfo: {
     title: 'Mahana Biopharma',
-  },
-  components: {
-    MailchimpSubscribe,
-  },
-  methods: {
-    onError() {
-      // handle error
-    },
-    onSuccess() {
-      // handle success
-    },
   },
 };
 </script>

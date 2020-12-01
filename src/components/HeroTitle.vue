@@ -7,8 +7,10 @@
     <cld-image
       v-if="cloudinaryImageId"
       class="hero-image"
+      ref="heroImage"
       :class="crop ? 'crop' : 'no-crop'"
       cloudName="mahana"
+      :secure="true"
       :publicId="cloudinaryImg"
     >
       <cld-transformation v-if="crop" crop="fill" :width="width" :height="height" format="auto" gravity="center" />
@@ -23,7 +25,7 @@
 </template>
 
 <script>
-// import simpleParallax from 'simple-parallax-js'
+import Rellax from 'rellax';
 
 export default {
   props: {
@@ -53,12 +55,9 @@ export default {
       return 'Website/' + this.cloudinaryImageId;
     },
   },
-  // mounted() {
-  //   var image = this.$refs.heroImage
-  //   new simpleParallax(image, {
-  //     orientation: 'down'
-  //   })
-  // }
+  mounted() {
+    var rellax = new Rellax('.hero-image');
+  },
 };
 </script>
 

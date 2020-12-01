@@ -52,6 +52,7 @@ $aos-distance: 15px;
 // Base
 @import 'base/forms';
 @import 'base/markdown';
+@import 'base/modal';
 @import 'base/typography';
 
 @import 'utilities';
@@ -90,14 +91,8 @@ img {
   }
 }
 
-// // Animations
-
-// [data-aos='slide-up'] {
-//   transform: translate3d(0, 15px, 0);
-//   opacity: 0;
-//   transition-property: transform, opacity;
-//   &.aos-animate {
-//     transform: none;
-//     opacity: 1;
-//   }
-// }
+.tm {
+  background-image: url(../../assets/images/tm-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 10%;
+}
