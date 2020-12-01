@@ -43,7 +43,7 @@
                 <div class="clear">
                   <input
                     type="submit"
-                    value="Subscribe"
+                    value="Register"
                     name="subscribe"
                     id="mc-embedded-subscribe"
                     class="btn btn-lg btn-primary"
