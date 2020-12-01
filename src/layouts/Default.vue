@@ -117,7 +117,7 @@
         <b-nav class="justify-content-center py-6">
           <b-nav-item class="tm" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
-          <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraines</b-nav-item>
+          <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraine</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
