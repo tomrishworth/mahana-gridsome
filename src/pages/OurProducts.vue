@@ -113,7 +113,7 @@
           <input type="text" name="firstName" class="form-control" id="firstNameInput" />
         </div>
         <div class="form-group">
-          <label for="lastNameInput">First name</label>
+          <label for="lastNameInput">Last name</label>
           <input type="text" name="lastName" class="form-control" id="lastNameInput" />
         </div>
         <div class="form-group">
