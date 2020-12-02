@@ -7,7 +7,7 @@
             class="d-none d-sm-block"
             src="https://res.cloudinary.com/mahana/image/upload/f_auto/v1606100361/Website/logo_jbhlbs.png"
             alt="Mahana Logo"
-            width="150"
+            width="130"
           />
           <g-image class="p-3 d-sm-none" src="~/assets/images/logo-sm.svg" alt="Mahana Logo" width="200" />
         </b-navbar-brand>
@@ -122,14 +122,14 @@
           <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
         </b-nav>
-        <ul class="social-links list-unstyled d-flex justify-content-center mb-0 pb-4">
+        <!-- <ul class="social-links list-unstyled d-flex justify-content-center mb-0 pb-4">
           <li>
             <a class="p-2 display-block" href=""><g-image src="~/assets/images/facebook-icon.svg"></g-image></a>
           </li>
           <li>
             <a class="p-2 display-block" href=""><g-image src="~/assets/images/instagram-icon.svg"></g-image></a>
           </li>
-        </ul>
+        </ul> -->
         <div class="py-4">
           <p class="text-white text-xs faded">&copy; Mahana Bio 2020</p>
         </div>

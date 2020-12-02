@@ -112,7 +112,6 @@
           <label for="interestInput">I'm interested in</label>
           <input
             disabled
-            :value="selectedProgram"
             type="text"
             name="interest"
             class="form-control"
@@ -158,6 +157,7 @@ export default {
     showModal(value) {
       console.log(value);
       this.selectedProgram = value;
+      this.formData.selectedProgram = value;
       this.modalShow = true;
     },
     encode(data) {

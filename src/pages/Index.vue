@@ -96,7 +96,7 @@
           </g-link>
         </div>
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up" data-aos-delay="200">
-          <g-link class="callout img-zoom" to="/our-partners">
+          <g-link class="callout img-zoom" to="/about#our-partners">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/our-partners.jpg"></g-image>
             <h3 class="callout-title">Our Partners</h3>
             <div class="callout-mask"></div>

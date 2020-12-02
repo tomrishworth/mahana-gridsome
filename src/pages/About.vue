@@ -23,7 +23,7 @@
         team supported by experts in migraine headache pain and neurology.
       </p>
     </section>
-    <section class="container-lg mb-10">
+    <section id="our-partners" class="container-lg mb-10">
       <h2 class="text-center text-2xl text-primary mb-8">Our Partners</h2>
       <div class="row">
         <partner
