@@ -169,7 +169,7 @@ query {
     content: '';
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     width: 100%;
-    height: 200px;
+    height: 230px;
     position: absolute;
     z-index: 5;
     top: 0;
