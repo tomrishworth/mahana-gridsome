@@ -9,7 +9,7 @@
             alt="Mahana Logo"
             width="130"
           />
-          <g-image class="pt-2 d-sm-none" src="~/assets/images/logo-sm.png" alt="Mahana Logo" width="130" />
+          <g-image class="mobile-logo d-sm-none" src="~/assets/images/logo-sm.png" alt="Mahana Logo" width="130" />
         </b-navbar-brand>
         <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
@@ -204,6 +204,7 @@ query {
     @include media-breakpoint-down(md) {
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       padding: $spacer-4 !important;
+      font-weight: normal;
     }
     &.router-link-active {
       @include media-breakpoint-up(md) {
@@ -214,6 +215,10 @@ query {
       }
     }
   }
+}
+
+.mobile-logo {
+  margin-top: -12px;
 }
 
 .sign-up-form {
