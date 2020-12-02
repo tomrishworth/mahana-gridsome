@@ -21,7 +21,7 @@ function addStyleResource(rule) {
 }
 
 module.exports = {
-  siteName: 'Mahana',
+  siteName: 'Mahana Biopharma',
   plugins: [
     {
       use: 'gridsome-plugin-purgecss',
