@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <hero-title class="mb-8" pageTitle="Contact Us" cloudinaryImageId="piha_lomlcn"></hero-title>
+    <hero-title class="mb-8" pageTitle="Contact Us" cloudinaryImageId="piha_lomlcn" imagePositionX="80"></hero-title>
 
     <div class="container-lg mb-10">
       <div class="row">

@@ -59,19 +59,24 @@
     <section class="container py-8 py-sm-10">
       <div class="row align-items-center ">
         <div style="z-index:10" class="col-sm-5" data-aos="fade-up">
-          <p class="text-primary text-md section-text">
+          <p class="text-primary text-md section-text mb-sm-0">
             <strong>Mahana Biopharma</strong> is a NZ owned and operated Medical Cannabis company dedicated to migraine
             headache product development and research for prescribers and patients in New Zealand and around the world
           </p>
         </div>
         <div class="col-sm-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          <div class="definition">
+            <div class="line-1 line-height-none">te reo Māori</div>
+            <div class="line-2 line-height-none">mahana</div>
+            <div class="line-3 line-height-tight">(noun) heat, warmth</div>
+          </div>
           <g-image src="~/assets/images/women-in-sun.jpg" alt="Smiling women in the sun" width="600" />
         </div>
       </div>
     </section>
     <section class="container mb-8 mb-sm-10">
       <div class="row align-items-center">
-        <div class="col-sm-6 order-sm-last">
+        <div class="col-sm-6 order-sm-last mb-4 mb-sm-0">
           <h3 class="text-primary" data-aos="fade-up">Our Products</h3>
           <p data-aos="fade-up" data-aos-delay="200">
             Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the
@@ -81,12 +86,17 @@
             <g-link class="btn btn-outline-primary" to="/our-products">Find out more</g-link>
           </p>
         </div>
-        <div class="col-sm-6 order-sm-first" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+        <div
+          class="col-sm-6 order-sm-first text-center"
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+        >
           <g-image class="products-image" src="~/assets/images/our-products.png" alt="" width="500" />
         </div>
       </div>
     </section>
-    <section class="container mb-8">
+    <section class="container-xl mb-8">
       <div class="row">
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up">
           <g-link class="callout img-zoom" to="/cannabis-and-migraines">
@@ -170,19 +180,23 @@ export default {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  z-index: 10;
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4);
+  z-index: 9;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
 }
 
 .hero-mask {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 5;
+  @include media-breakpoint-up(sm) {
+    height: 300px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  }
 }
 
 #mc_embed_signup {
@@ -190,6 +204,9 @@ export default {
     font-size: $text-base;
     padding-left: 3rem;
     padding-right: 3rem;
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
   }
 }
 
@@ -235,5 +252,28 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 5;
+}
+
+.definition {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  font-style: italic;
+  .line-1 {
+    color: #9ca7a9;
+  }
+  .line-2 {
+    color: #d0d0d0;
+    font-size: $text-2xl;
+    @include media-breakpoint-up(sm) {
+      font-size: $text-3xl;
+    }
+  }
+  .line-3 {
+    color: #838380;
+    @include media-breakpoint-up(sm) {
+      color: #b2b2b1;
+    }
+  }
 }
 </style>

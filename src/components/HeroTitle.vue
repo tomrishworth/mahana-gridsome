@@ -9,6 +9,7 @@
       class="hero-image"
       ref="heroImage"
       :class="crop ? 'crop' : 'no-crop'"
+      :style="cssVars"
       cloudName="mahana"
       :secure="true"
       :publicId="cloudinaryImg"
@@ -48,11 +49,20 @@ export default {
       type: Number,
       default: 600,
     },
+    imagePositionX: {
+      type: Number,
+      default: 50,
+    },
     backgroundColor: String,
   },
   computed: {
     cloudinaryImg() {
       return 'Website/' + this.cloudinaryImageId;
+    },
+    cssVars() {
+      return {
+        '--objectPositionX': this.imagePositionX + '%',
+      };
     },
   },
   mounted() {
@@ -92,6 +102,7 @@ export default {
   right: 0;
   img {
     object-fit: cover;
+    object-position: var(--objectPositionX) 50%;
     width: 100%;
     height: 600px;
   }
@@ -112,7 +123,7 @@ export default {
   margin-right: auto;
   text-align: center;
   position: relative;
-  z-index: 10;
+  z-index: 9;
   padding-bottom: $spacer-8;
   h1,
   h2 {

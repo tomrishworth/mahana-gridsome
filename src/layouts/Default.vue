@@ -9,12 +9,12 @@
             alt="Mahana Logo"
             width="130"
           />
-          <g-image class="p-3 d-sm-none" src="~/assets/images/logo-sm.svg" alt="Mahana Logo" width="200" />
+          <g-image class="pt-2 d-sm-none" src="~/assets/images/logo-sm.png" alt="Mahana Logo" width="130" />
         </b-navbar-brand>
         <b-navbar-toggle class="ml-auto" target="nav-collapse"></b-navbar-toggle>
         <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="pt-4 pr-4 ml-auto">
-            <b-nav-item class="tm" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
+          <b-navbar-nav class="pt-sm-4 pr-sm-4 ml-auto">
+            <b-nav-item class="tm tm-mobile" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraine</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
@@ -122,14 +122,23 @@
           <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
         </b-nav>
-        <!-- <ul class="social-links list-unstyled d-flex justify-content-center mb-0 pb-4">
+        <ul class="social-links list-unstyled d-flex justify-content-center mb-0 pb-4">
           <li>
-            <a class="p-2 display-block" href=""><g-image src="~/assets/images/facebook-icon.svg"></g-image></a>
+            <a class="p-2 display-block" href="https://fb.me/mahanabiopharma"
+              ><g-image src="~/assets/images/facebook-icon.svg"></g-image
+            ></a>
           </li>
           <li>
-            <a class="p-2 display-block" href=""><g-image src="~/assets/images/instagram-icon.svg"></g-image></a>
+            <a class="p-2 display-block" href="https://www.instagram.com/mahanabiopharma"
+              ><g-image src="~/assets/images/instagram-icon.svg"></g-image
+            ></a>
           </li>
-        </ul> -->
+          <li>
+            <a class="p-2 display-block" href="https://twitter.com/mahanabiopharma"
+              ><g-image src="~/assets/images/twitter-icon.svg"></g-image
+            ></a>
+          </li>
+        </ul>
         <div class="py-4">
           <p class="text-white text-xs faded">&copy; Mahana Bio 2020</p>
         </div>
@@ -176,6 +185,35 @@ query {
     left: 0;
     right: 0;
   }
+
+  .nav-item {
+    @include media-breakpoint-up(sm) {
+      padding-left: $spacer-4;
+      padding-right: $spacer-4;
+    }
+  }
+
+  .nav-link {
+    font-size: $text-md;
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+      font-size: $text-sm;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+    @include media-breakpoint-down(md) {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: $spacer-4 !important;
+    }
+    &.router-link-active {
+      @include media-breakpoint-up(md) {
+        border-bottom: 2px solid $primary;
+      }
+      @include media-breakpoint-down(md) {
+        color: $primary;
+      }
+    }
+  }
 }
 
 .sign-up-form {
@@ -207,8 +245,8 @@ query {
 
 .navbar-collapse.show {
   .navbar-nav {
-    padding: $spacer-4;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
+    max-width: 340px;
   }
 }
 
@@ -235,17 +273,11 @@ query {
   }
 }
 
-.nav-link {
-  font-size: $text-sm;
-  font-weight: 700;
-  // &.router-link-active {
-  //   color: $primary;
-  // }
-}
-
 footer {
   .nav-link {
     color: #fff;
+    font-size: $text-base;
+    font-weight: 700;
   }
 }
 

@@ -96,3 +96,16 @@ img {
   background-repeat: no-repeat;
   background-position: 95% 10%;
 }
+
+.tm-mobile {
+  @include media-breakpoint-down(md) {
+    background-image: none;
+    position: relative;
+    &::after {
+      content: url(../../assets/images/tm-icon.svg);
+      position: absolute;
+      top: 6px;
+      left: 110px;
+    }
+  }
+}
