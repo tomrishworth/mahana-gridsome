@@ -30,21 +30,6 @@ module.exports = {
         defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
       },
     },
-    // {
-    //   use: 'gridsome-source-graphql-prismic',
-    //   options: {
-    //     url: 'https://mahana.cdn.prismic.io',
-    //     fieldName: 'prismicio',
-    //     typeName: 'prismicio',
-
-    //     headers: {
-    //       'Prismic-Ref': ``, // useMasterRef will overload this line
-    //       Authorization: `Token `,
-    //     },
-
-    //     useMasterRef: true, // undefined by default
-    //   },
-    // },
     {
       use: '@gridsome/source-datocms',
       options: {
@@ -52,6 +37,14 @@ module.exports = {
         previewMode: false,
         apiUrl: 'https://site-api.datocms.com',
         typeName: 'DatoCms',
+      },
+    },
+    {
+      use: 'gridsome-plugin-gtag',
+      options: {
+        config: {
+          id: 'G-668GKPYP88',
+        },
       },
     },
   ],
