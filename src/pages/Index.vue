@@ -129,8 +129,10 @@ export default {
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url(../assets/images/homepage-hero-desktop.jpg);
+  // background-image: url(../assets/images/homepage-hero-desktop.jpg);
+  background-image: url(https://res.cloudinary.com/mahana/image/upload/v1606878660/Website/homepage-hero-desktop-darker_e1wp3q.jpg);
   background-size: cover;
+  background-position: top center;
   height: calc(100vh + 100px);
   // min-height: 00px;
   display: flex;
