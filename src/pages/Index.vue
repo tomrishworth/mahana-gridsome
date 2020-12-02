@@ -61,7 +61,7 @@
         <div style="z-index:10" class="col-sm-5" data-aos="fade-up">
           <p class="text-primary text-md section-text">
             <strong>Mahana Biopharma</strong> is a NZ owned and operated Medical Cannabis company dedicated to migraine
-            headache product development and research for prescripbers and patient in New Zealand and around the world
+            headache product development and research for prescribers and patients in New Zealand and around the world
           </p>
         </div>
         <div class="col-sm-7" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
