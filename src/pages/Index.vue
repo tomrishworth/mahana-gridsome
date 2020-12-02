@@ -7,7 +7,7 @@
           Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars
         </h2>
         <div data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
-          <h3 class="text-lg mb-5 hr">Register your interest</h3>
+          <h3 class="text-md mb-5 hr">Register your interest</h3>
           <div id="mc_embed_signup">
             <form
               action="https://mahanabiopharma.us7.list-manage.com/subscribe/post?u=0ad08557738929089c8fbd124&amp;id=53d7f46597"
@@ -27,7 +27,7 @@
                     type="email"
                     value=""
                     name="EMAIL"
-                    class="form-control form-control-lg required email"
+                    class="form-control form-control required email"
                     id="mce-EMAIL"
                   />
                 </div>
@@ -46,7 +46,7 @@
                     value="Register"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    class="btn btn-lg btn-primary"
+                    class="btn btn-primary"
                   />
                 </div>
               </div>
@@ -183,6 +183,17 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 5;
+}
+
+#mc_embed_signup {
+  .form-control {
+    // font-size: $text-base;
+  }
+  .btn {
+    font-size: $text-base;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .section-text {
