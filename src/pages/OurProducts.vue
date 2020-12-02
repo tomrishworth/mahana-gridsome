@@ -96,40 +96,29 @@
       </div>
     </section>
     <b-modal v-model="modalShow" title="Research Enquiry" hide-footer>
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        v-on:submit.prevent="handleSubmit"
-        action="/success/"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label> Don’t fill this out: <input name="bot-field" /> </label>
-        </p>
+      <form name="contact" method="POST" action="https://www.form-data.com/_functions/submit/wswzoqkn70dvaom0flp35b">
         <div class="form-group">
           <label for="interestInput">I'm interested in</label>
           <input
             disabled
+            :value="selectedProgram"
             type="text"
             name="interest"
             class="form-control"
             id="interestInput"
-            v-model="formData.selectedProgram"
           />
         </div>
         <div class="form-group">
           <label for="firstNameInput">First name</label>
-          <input type="text" name="firstName" class="form-control" id="firstNameInput" v-model="formData.firstName" />
+          <input type="text" name="firstName" class="form-control" id="firstNameInput" />
         </div>
         <div class="form-group">
           <label for="lastNameInput">Last name</label>
-          <input type="text" name="lastName" class="form-control" id="lastNameInput" v-model="formData.lastName" />
+          <input type="text" name="lastName" class="form-control" id="lastNameInput" />
         </div>
         <div class="form-group">
           <label for="emailInput">Email Address</label>
-          <input type="email" name="email" class="form-control" id="emailInput" v-model="formData.email" />
+          <input type="email" name="email" class="form-control" id="emailInput" />
         </div>
         <div class="form-group text-center">
           <button class="btn btn-primary" type="submit">Submit</button>
@@ -150,32 +139,13 @@ export default {
     return {
       modalShow: false,
       selectedProgram: null,
-      formData: {},
     };
   },
   methods: {
     showModal(value) {
       console.log(value);
       this.selectedProgram = value;
-      this.formData.selectedProgram = value;
       this.modalShow = true;
-    },
-    encode(data) {
-      return Object.keys(data)
-        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-        .join('&');
-    },
-    handleSubmit(e) {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: this.encode({
-          'form-name': e.target.getAttribute('name'),
-          ...this.formData,
-        }),
-      })
-        .then(() => this.$router.push('/thank-you/'))
-        .catch((error) => alert(error));
     },
   },
   components: {

@@ -186,9 +186,6 @@ export default {
 }
 
 #mc_embed_signup {
-  .form-control {
-    // font-size: $text-base;
-  }
   .btn {
     font-size: $text-base;
     padding-left: 3rem;
