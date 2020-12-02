@@ -47,7 +47,7 @@
             consistent, safe and reliable. GMP is the world’s gold standard for medicinal products.
           </p>
         </div>
-        <div class="col-sm-6 order-sm-first" data-aos="fade-up" data-aos-delay="600">
+        <div class="col-sm-6 order-sm-first text-center" data-aos="fade-up" data-aos-delay="600">
           <g-image class="products-image" src="~/assets/images/quality-assurance.png" alt="" width="500" />
         </div>
       </div>
@@ -134,6 +134,41 @@ import HeroTitle from '~/components/HeroTitle';
 export default {
   metaInfo: {
     title: 'Our Products',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Our Products',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/our-products',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content:
+          'Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the health of patients suffering debilitating migraine headache.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/mahana/image/upload/c_fill,g_center,h_600,w_600/v1/Website/louis-reed-pwcKF7L4-no-unsplash_m4ku8c.jpg',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Mahana Biopharma',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the health of patients suffering debilitating migraine headache.',
+      },
+    ],
   },
   data() {
     return {

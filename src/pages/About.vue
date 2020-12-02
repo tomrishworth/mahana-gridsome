@@ -45,6 +45,41 @@ export default {
   name: 'about',
   metaInfo: {
     title: 'About us',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'About us',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/about',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content:
+          'Mahana exists to improve the quality of life for millions of migraine headache sufferers worldwide. To find a cure for migraine, we are proud to have assembled a team of global industry leaders.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/mahana/image/upload/c_fill,g_center,h_600,w_600/v1/Website/petr-vysohlid-9fqwGqGLUxc-unsplash_ow747i.jpg',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'About us',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Mahana exists to improve the quality of life for millions of migraine headache sufferers worldwide. To find a cure for migraine, we are proud to have assembled a team of global industry leaders.',
+      },
+    ],
   },
   components: {
     HeroTitle,

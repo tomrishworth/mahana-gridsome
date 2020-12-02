@@ -33,6 +33,29 @@ import HeroTitle from '~/components/HeroTitle';
 export default {
   metaInfo: {
     title: 'Contact Us',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Contact Us',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/about',
+      },
+
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content: 'https://res.cloudinary.com/mahana/image/upload/c_fill,g_center,h_600,w_600/v1/Website/piha_lomlcn',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Contact Us',
+      },
+    ],
   },
   components: {
     HeroTitle,

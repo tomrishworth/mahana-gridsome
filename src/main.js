@@ -21,5 +21,26 @@ export default function(Vue, { router, head, isClient }) {
   Vue.use(VueSimpleMarkdown);
   Vue.use(BootstrapVue);
 
-  head.bodyAttrs = { 'v-b-scrollspy': "{element: '#listgroup-ex', offset: 50}' " };
+  head.meta.push({
+    key: 'og:type',
+    property: 'og:type',
+    content: 'website',
+  });
+
+  head.meta.push({
+    key: 'og:description',
+    property: 'og:description',
+    content: 'Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars',
+  });
+
+  head.meta.push({
+    key: 'twitter:description',
+    name: 'twitter:description',
+    content: 'Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars',
+  });
+
+  head.meta.push({
+    name: 'theme-color',
+    content: '#093185',
+  });
 }

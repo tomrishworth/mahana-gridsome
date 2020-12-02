@@ -39,6 +39,41 @@ import HeroTitle from '~/components/HeroTitle';
 export default {
   metaInfo: {
     title: 'Our Plans',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Our Plans',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/our-plans',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content:
+          'From our home base in Auckland, we aim to be the global leading medical cannabis migraine company in the world.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content:
+          'https://res.cloudinary.com/mahana/image/upload/c_fill,g_center,h_600,w_600/v1/Website/dave-campbell-71yw1I436bk-unsplash_ynsayk.jpg',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Our Plans',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'From our home base in Auckland, we aim to be the global leading medical cannabis migraine company in the world.',
+      },
+    ],
   },
   components: {
     HeroTitle,

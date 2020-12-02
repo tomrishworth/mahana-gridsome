@@ -16,7 +16,7 @@
           <b-navbar-nav class="pt-sm-4 pr-sm-4 ml-auto">
             <b-nav-item class="tm tm-mobile" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
-            <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraine</b-nav-item>
+            <b-nav-item router-component-name="g-link" to="/cannabis-and-migraine">Cannabis & Migraine</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
             <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
@@ -117,7 +117,7 @@
         <b-nav class="justify-content-center py-6">
           <b-nav-item class="tm" router-component-name="g-link" to="/daysaver">Daysaver</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-products">Our Products</b-nav-item>
-          <b-nav-item router-component-name="g-link" to="/cannabis-and-migraines">Cannabis & Migraine</b-nav-item>
+          <b-nav-item router-component-name="g-link" to="/cannabis-and-migraine">Cannabis & Migraine</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/our-plans">Our Plans</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/about">About</b-nav-item>
           <b-nav-item router-component-name="g-link" to="/contact">Contact</b-nav-item>
@@ -154,6 +154,7 @@ export default {
   mounted() {
     AOS.init({
       duration: 1000,
+      once: true,
     });
   },
 };

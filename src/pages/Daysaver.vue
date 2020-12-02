@@ -30,6 +30,40 @@ import HeroTitle from '~/components/HeroTitle';
 export default {
   metaInfo: {
     title: 'Daysaver',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Daysaver',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/daysaver',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content:
+          'DAYSAVERmigraine™ is a new FMCG wellness brand developed in consultation with industry pioneering neurology specialists by Mahana Biopharma.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content: 'https://res.cloudinary.com/mahana/image/upload/v1/Website/daysaver-logo_bl3icj.png',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Daysaver',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'DAYSAVERmigraine™ is a new FMCG wellness brand developed in consultation with industry pioneering neurology specialists by Mahana Biopharma.',
+      },
+    ],
   },
   components: {
     HeroTitle,

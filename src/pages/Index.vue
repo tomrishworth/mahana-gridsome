@@ -99,7 +99,7 @@
     <section class="container-xl mb-8">
       <div class="row">
         <div class="col-sm-4 mb-4 mb-sm-0" data-aos="fade-up">
-          <g-link class="callout img-zoom" to="/cannabis-and-migraines">
+          <g-link class="callout img-zoom" to="/cannabis-and-migraine">
             <g-image height="250" width="370" class="img-fluid" src="~/assets/images/cannabis-migraine.jpg"></g-image>
             <h3 class="callout-title">Cannabis &amp; Migraine</h3>
             <div class="callout-mask"></div>
@@ -133,6 +133,38 @@
 export default {
   metaInfo: {
     title: 'Mahana Biopharma',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Mahana Biopharma',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content: 'Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content: 'https://res.cloudinary.com/mahana/image/upload/v1606949502/Website/logo-with-background_cgwi4k.png',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Mahana Biopharma',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content: 'Harnessing cannabis plant genetics to create novel migraine medicines from unique cultivars.',
+      },
+    ],
   },
 };
 </script>

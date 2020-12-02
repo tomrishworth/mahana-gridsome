@@ -2,7 +2,7 @@
   <Layout>
     <hero-title
       class="mb-8"
-      pageTitle="Cannabis & Migraine"
+      pageTitle="Cannabis &amp; Migraine"
       cloudinaryImageId="matthew-brodeur-qcCPIhhdgTw-unsplash_suoz9a.jpg"
       intro="Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the health of patients suffering debilitating migraine headache.
 "
@@ -40,7 +40,41 @@ import HeroTitle from '~/components/HeroTitle';
 
 export default {
   metaInfo: {
-    title: 'FAQs',
+    title: 'Cannabis &amp; Migraine',
+    meta: [
+      {
+        key: 'og:title',
+        property: 'og:title',
+        content: 'Cannabis &amp; Migraine',
+      },
+      {
+        key: 'og:url',
+        property: 'og:url',
+        content: 'https://mahanabiopharma.co.nz/cannabis-and-migraine',
+      },
+      {
+        key: 'og:description',
+        property: 'og:description',
+        content:
+          'Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the health of patients suffering debilitating migraine headache.',
+      },
+      {
+        key: 'og:image',
+        property: 'og:image',
+        content: 'https://www.datocms-assets.com/35711/1602826007-image-2.png',
+      },
+      {
+        key: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Cannabis &amp; Migraine',
+      },
+      {
+        key: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Mahana is creating premium terpene and cannabinoid-based therapeutic products able to treat and support the health of patients suffering debilitating migraine headache.',
+      },
+    ],
   },
   components: {
     HeroTitle,
