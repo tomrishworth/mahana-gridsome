@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section class="hero container-fluid">
+    <section ref="hero" class="hero container-fluid" :class="[loading ? 'hero-image-loading' : 'hero-image-loaded']">
       <div class="hero-content pb-8 text-center">
         <h1 class="text-3xl" data-aos="fade-up" data-aos-offset="0">A Cure for Migraine is Coming</h1>
         <h2 class="faded text-lg mb-6" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
@@ -130,7 +130,14 @@
 </template>
 
 <script>
+import imagesLoaded from 'imagesloaded';
+
 export default {
+  data() {
+    return {
+      loading: false,
+    };
+  },
   metaInfo: {
     title: 'Mahana Biopharma',
     meta: [
@@ -166,13 +173,22 @@ export default {
       },
     ],
   },
+  beforeMount() {
+    this.loading = true;
+  },
+  mounted() {
+    imagesLoaded([this.$refs.hero], { background: true }, () => {
+      console.log('hero image loaded');
+      this.loading = false;
+    });
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .hero {
   // background-image: url(../assets/images/homepage-hero-desktop.jpg);
-  background-image: url(https://res.cloudinary.com/mahana/image/upload/v1606878660/Website/homepage-hero-desktop-darker_e1wp3q.jpg);
+  background-image: url('https://res.cloudinary.com/mahana/image/upload/c_fill,f_auto,h_700,w_500/v1606878660/Website/homepage-hero-desktop-darker_e1wp3q.jpg');
   background-size: cover;
   background-position: top center;
   height: calc(100vh + 100px);
@@ -181,6 +197,9 @@ export default {
   justify-content: flex-start;
   align-items: flex-end;
   position: relative;
+  @include media-breakpoint-up(sm) {
+    background-image: url(https://res.cloudinary.com/mahana/image/upload/f_auto/v1606878660/Website/homepage-hero-desktop-darker_e1wp3q.jpg);
+  }
   .hr {
     @include media-breakpoint-up(sm) {
       position: relative;
